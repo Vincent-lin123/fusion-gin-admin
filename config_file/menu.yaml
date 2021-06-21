@@ -17,36 +17,36 @@
           name: 新增
           resources:
             - method: POST
-              path: "/api/v1/menus"
+              path: "/api/v1/fusion-gin-admin/menus"
         - code: edit
           name: 编辑
           resources:
             - method: GET
-              path: "/api/v1/menus/:id"
+              path: "/api/v1/fusion-gin-admin/menus/:id"
             - method: PUT
-              path: "/api/v1/menus/:id"
+              path: "/api/v1/fusion-gin-admin/menus/:id"
         - code: del
           name: 删除
           resources:
             - method: DELETE
-              path: "/api/v1/menus/:id"
+              path: "/api/v1/fusion-gin-admin/menus/:id"
         - code: query
           name: 查询
           resources:
             - method: GET
-              path: "/api/v1/menus"
+              path: "/api/v1/fusion-gin-admin/menus"
             - method: GET
-              path: "/api/v1/menus.tree"
+              path: "/api/v1/fusion-gin-admin/menus.tree"
         - code: disable
           name: 禁用
           resources:
             - method: PATCH
-              path: "/api/v1/menus/:id/disable"
+              path: "/api/v1/fusion-gin-admin/menus/:id/disable"
         - code: enable
           name: 启用
           resources:
             - method: PATCH
-              path: "/api/v1/menus/:id/enable"
+              path: "/api/v1/fusion-gin-admin/menus/:id/enable"
     - name: 角色管理
       icon: audit
       router: "/system/role"
@@ -56,38 +56,38 @@
           name: 新增
           resources:
             - method: GET
-              path: "/api/v1/menus.tree"
+              path: "/api/v1/fusion-gin-admin/menus.tree"
             - method: POST
-              path: "/api/v1/roles"
+              path: "/api/v1/fusion-gin-admin/roles"
         - code: edit
           name: 编辑
           resources:
             - method: GET
-              path: "/api/v1/menus.tree"
+              path: "/api/v1/fusion-gin-admin/menus.tree"
             - method: GET
-              path: "/api/v1/roles/:id"
+              path: "/api/v1/fusion-gin-admin/roles/:id"
             - method: PUT
-              path: "/api/v1/roles/:id"
+              path: "/api/v1/fusion-gin-admin/roles/:id"
         - code: del
           name: 删除
           resources:
             - method: DELETE
-              path: "/api/v1/roles/:id"
+              path: "/api/v1/fusion-gin-admin/roles/:id"
         - code: query
           name: 查询
           resources:
             - method: GET
-              path: "/api/v1/roles"
+              path: "/api/v1/fusion-gin-admin/roles"
         - code: disable
           name: 禁用
           resources:
             - method: PATCH
-              path: "/api/v1/roles/:id/disable"
+              path: "/api/v1/fusion-gin-admin/roles/:id/disable"
         - code: enable
           name: 启用
           resources:
             - method: PATCH
-              path: "/api/v1/roles/:id/enable"
+              path: "/api/v1/fusion-gin-admin/roles/:id/enable"
     - name: 用户管理
       icon: user
       router: "/system/user"
@@ -97,23 +97,23 @@
           name: 新增
           resources:
             - method: GET
-              path: "/api/v1/roles.select"
+              path: "/api/v1/fusion-gin-admin/roles.select"
             - method: POST
-              path: "/api/v1/users"
+              path: "/api/v1/fusion-gin-admin/users"
         - code: edit
           name: 编辑
           resources:
             - method: GET
-              path: "/api/v1/roles.select"
+              path: "/api/v1/fusion-gin-admin/roles.select"
             - method: GET
-              path: "/api/v1/users/:id"
+              path: "/api/v1/fusion-gin-admin/users/:id"
             - method: PUT
-              path: "/api/v1/users/:id"
+              path: "/api/v1/fusion-gin-admin/users/:id"
         - code: del
           name: 删除
           resources:
             - method: DELETE
-              path: "/api/v1/users/:id"
+              path: "/api/v1/fusion-gin-admin/users/:id"
         - code: query
           name: 查询
           resources:
@@ -123,9 +123,9 @@
           name: 禁用
           resources:
             - method: PATCH
-              path: "/api/v1/users/:id/disable"
+              path: "/api/v1/fusion-gin-admin/users/:id/disable"
         - code: enable
           name: 启用
           resources:
             - method: PATCH
-              path: "/api/v1/users/:id/enable"
+              path: "/api/v1/fusion-gin-admin/users/:id/enable"

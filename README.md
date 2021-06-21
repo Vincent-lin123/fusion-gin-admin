@@ -1,7 +1,7 @@
 <h1 align="center">Fusion Ops</h1>
 
 <div align="center">
- Fusion 运营支撑系统
+ Fusion gin项目快速搭建基础模块
 <br/>
 
 </div>
