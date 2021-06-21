@@ -93,7 +93,7 @@ ConfigDir = ""
 # 登录用户名
 UserName = "root"
 # 登录密码
-Password = "fusionops-123"
+Password = "fusion-gin-admin-123"
 # 显示的真实姓名
 RealName = "超级管理员"
 
@@ -110,7 +110,7 @@ Enable = true
 # 签名方式(支持：HS512/HS384/HS512)
 SigningMethod = "HS512"
 # 签名key
-SigningKey = "fusionops"
+SigningKey = "fusion-gin-admin"
 # 过期时间（单位秒）
 Expired = 7200
 # 存储(支持：file/redis)

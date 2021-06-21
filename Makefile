@@ -4,7 +4,7 @@ NOW = $(shell date -u '+%Y%m%d%I%M%S')
 
 RELEASE_VERSION = v1.0.0
 
-APP 			= fusionops
+APP 			= fusion-gin-admin
 SERVER_BIN  	= ./cmd/${APP}/${APP}
 RELEASE_ROOT 	= release
 RELEASE_SERVER 	= release/${APP}

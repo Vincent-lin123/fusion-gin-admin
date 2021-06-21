@@ -9,16 +9,16 @@ func (a *Router) RegisterAPI(app *gin.Engine) {
 	g := app.Group("/api")
 
 	g.Use(middleware.UserAuthMiddleware(a.Auth,
-		middleware.AllowPathPrefixSkipper("/api/v1/fusionops/admin/login"),
+		middleware.AllowPathPrefixSkipper("/api/v1/fusion-gin-admin/admin/login"),
 	))
 
 	g.Use(middleware.CasbinMiddleware(a.CasbinEnforcer,
-		middleware.AllowPathPrefixSkipper("/api/v1/fusionops"),
+		middleware.AllowPathPrefixSkipper("/api/v1/fusion-gin-admin"),
 	))
 
 	g.Use(middleware.RateLimiterMiddleware())
 
-	v1 := g.Group("/v1/fusionops")
+	v1 := g.Group("/v1/fusion-gin-admin")
 	{
 		admin := v1.Group("/admin")
 		{
