@@ -15,6 +15,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+
+	_ "fusion-gin-admin/swagger"
 )
 
 type options struct {

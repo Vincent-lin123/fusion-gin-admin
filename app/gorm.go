@@ -5,6 +5,8 @@ import (
 	"fusion-gin-admin/lib/errors"
 	"fusion-gin-admin/model/gormx"
 	"github.com/jinzhu/gorm"
+
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func InitGormDB() (*gorm.DB, func(), error) {
