@@ -28,6 +28,7 @@ func UserAuthMiddleware(a auth.Auther, skippers ...SkipperFunc) gin.HandlerFunc 
 	return func(context *gin.Context) {
 		if SkipHandler(context, skippers...) {
 			context.Next()
+			return
 		}
 
 		userID, err := a.ParseUserID(context.Request.Context(), ginx.GetToken(context))

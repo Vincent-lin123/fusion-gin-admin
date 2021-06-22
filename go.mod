@@ -6,6 +6,7 @@ require (
 	github.com/LyricTian/captcha v1.1.0
 	github.com/LyricTian/gzip v0.1.1
 	github.com/LyricTian/queue v1.2.0
+	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/casbin/casbin/v2 v2.31.5
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fatih/camelcase v1.0.0 // indirect
@@ -24,6 +25,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.8.1
 	github.com/swaggo/gin-swagger v1.3.0
+	github.com/swaggo/swag v1.5.1
 	github.com/urfave/cli/v2 v2.3.0
 	golang.org/x/time v0.0.0-20210611083556-38a9dc6acbc6
 	gopkg.in/yaml.v2 v2.4.0
